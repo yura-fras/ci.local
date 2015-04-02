@@ -9,9 +9,10 @@ class First extends CI_Controller {
 
     function about ()
     {
-        $data["name"] = "Yura";
-        $data["surname"] = "Fras";
-        $data["age"] = "22 years";
+        $data['info'] = array('Yura', 'Fras', '22 years');
+        $data[] = "Fras";
+        $data[] = "22 years";
+
 
         $this->load->view('about_view', $data);
     }

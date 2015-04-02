@@ -6,9 +6,7 @@
 
     <style type="text/css">
 
-        ::selection{ background-color: #E13300; color: white; }
-        ::moz-selection{ background-color: #E13300; color: white; }
-        ::webkit-selection{ background-color: #E13300; color: white; }
+
 
         body {
             background-color: #fff;
@@ -69,9 +67,10 @@
 
 <h1>Welcome to CodeIgniter!</h1>
 
-<p><?=$name;?></p>
-<p><?=$surname;?></p>
-<p><?=$age;?></p>
+<?php foreach ($info as $item) : ?>
+<p><?=$item;?></p>
+<?php endforeach;?>
+
 
 </body>
 </html>
